@@ -49,6 +49,12 @@
   }
 
   /* Buscador  */
+  .buscador{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   input {
     font-size: 1.1rem;
     border: none;

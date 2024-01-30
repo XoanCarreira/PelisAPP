@@ -1,10 +1,10 @@
 <footer>
-    <p>Información facilitada por <a target="_blank" href="https://www.themoviedb.org/">TMBD</a></p>
+    <p>Información facilitada por <a target="_blank" href="https://www.themoviedb.org/"><img src="logo_TMBD.png" alt="Logo de TMBD"></a></p>
 </footer>
 
 <style>
     footer{
-        height: 60px;
+        min-height: 40px;
         width: 100%;
         background-color: black;
         color: #fff;
@@ -16,7 +16,12 @@
     }
 
     p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     a{
