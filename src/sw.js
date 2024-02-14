@@ -5,6 +5,7 @@ const CACHE_NAME = 'v1_cache_pelisapp_pwa';
 // Ficheros a cachear en la aplicación
 
 var urlsToCache = [
+    './',
     '%sveltekit.assets%/favicon_16.png',
     '%sveltekit.assets%/favicon_32.png',
     '%sveltekit.assets%/favicon_48.png',
