@@ -3,7 +3,7 @@
     "short_name": "PelisApp",
     "description": "Aplicación PWA que proporciona información sobre películas, series...",
     "background_color": "#ccc",
-    "theme_color": "#002e7a",
+    "theme_color": "#fff",
     "orientation": "portrait",
     "display": "standalone",
     "start_url": "/",
