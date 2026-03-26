@@ -23,3 +23,22 @@ declare module "svelte/elements" {
 }
 
 export {};
+
+
+declare module "$app/types" {
+	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
+
+	export interface AppTypes {
+		RouteId(): "/" | "/components";
+		RouteParams(): {
+			
+		};
+		LayoutParams(): {
+			"/": Record<string, never>;
+			"/components": Record<string, never>
+		};
+		Pathname(): "/";
+		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
+		Asset(): "/favicon.png" | "/favicon_152.png" | "/favicon_16.png" | "/favicon_167.png" | "/favicon_180.png" | "/favicon_192.png" | "/favicon_32.png" | "/favicon_48.png" | "/favicon_512.png" | "/favicon_96.png" | "/fonts/AllertaStencil-Regular.ttf" | "/fonts/Orbitron-VariableFont_wght.ttf" | "/logoPelis.png" | "/logo_TMBD.png" | "/manifest.json" | string & {};
+	}
+}
